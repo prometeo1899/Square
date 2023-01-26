@@ -3,36 +3,38 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 } 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
     background-color: linear-gradient(to bottom, #f1f4f9, #dff1ff);
 }
 section .color {
    position: absolute;
-   filter: blur(150px);    
+   filter: blur(150px); 
+   width: 90em;
+    height:50em;
+   background-color: #797878ab;    
 }
 section .color:nth-child(1) {
-    top: -350;
-    width: 1500px; height:900px;
+
+    width: 90em; height:50em;
     background-color: #797878ab;
 }
 
 section .box {
     position: relative;
+
 }
-section .box .square {
-    position: absolute;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.11);
-    background: rgba(90, 88, 89, 0.171);
-    border-radius: 10px;
-    animation: animate 10s linear infinite;
-    animation-delay: calc(-1s * var(--i));
-}
+
 section .box .square {
     position: absolute;
     backdrop-filter: blur(5px);
@@ -156,5 +158,34 @@ section .container form .forget a {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
+}
+@media all and (max-width:1000px){
+
+    
+
+
+ 
+    }
+    section .color :nth-child(1){
+        position: absolute;
+        width: 25em;
+        height: 150vh;
+
+}
+@media all and (max-width:800px){
+    section .container{
+     
+        position: relative;
+        width: 800px;
+        min-height: 800px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    }
+
 }
 
